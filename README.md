@@ -40,8 +40,6 @@ import cv2
 from image_quality_checker import image_quality_score
 import image_quality_checker
 
-# Show where the module is loaded from (for debugging):
-print(image_quality_checker.__file__)
 
 # Load an image and convert it to bytes
 image_path = "path/to/your/image.jpg"  # Replace with the actual path
@@ -60,7 +58,7 @@ else:
 
 # If the return is "True"
 if result is True:
-    print("Image is predominantly a single color, or is very small, or is corrupt.")
+    print("Image is predominantly a single color, very low quality, very small or is corrupt.")
 # If exception occurs
 if isinstance(result, Exception):
     print(f"An error occurred: {result}")
@@ -109,7 +107,7 @@ The final score is calculated using weighted contributions from individual metri
 | color\_std\_dev | 0.15   | 100                          |
 | entropy          | 0.1    | 8.0                          |
 
-Each metric is normalized by dividing its value by the corresponding `max_value` (and clamped to 1.0).  This ensures that all metrics contribute equally to the final score, regardless of their original scales.
+Each metric is normalized by dividing its value by the corresponding `max_value` (and clamped to 1.0).
 
 ## Notes
 
@@ -119,5 +117,3 @@ Each metric is normalized by dividing its value by the corresponding `max_value`
 *   Consider logging the individual metric values for more detailed analysis and debugging.
 * The package now has a check on the file size and, if it is below 3 KB it's considered valid.
 * Image is resized to 256x256 for consistency in processing.
-
-This improved README provides a complete and clear guide to using the `image-quality-checker` package, explaining its functionality, installation, usage, and internal workings.  It also includes crucial details about error handling, thresholds, and potential improvements. It also explains the inputs, outputs, and internal workings. This README is suitable for use on GitHub, PyPI, or other documentation platforms.
