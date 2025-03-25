@@ -18,22 +18,28 @@ This package provides a comprehensive image quality assessment tool that analyze
 *   **Error Handling:** Includes a `try-except` block to gracefully handle potential errors during image processing.
 *   **Face detection:** Uses Haar cascades to identify the faces in the image.
 
+
+## Detailed Blur Analysis
+
+*   **Blur Detection:** Utilize the Laplacian variance method. Higher variance indicates sharper regions.
+
+*   **Blur Ratio:** Calculate the percentage of blurry blocks relative to the total blocks in the image.
+
+*   **Blur Classification:** Use thresholds on the blur ratio and connected component analysis for "Portrait-like" classification.
+
+*   **Blur Map:** Generate a grayscale image where blurry regions are white and sharp regions are black.
+
+*   **Overall Blur Assessment:** Determine if the image is blurry overall based on the blur ratio.
+
 ## Installation
 
 ```bash
 pip install image-quality-checker
 ```
 
-## Dependencies
-
-*   opencv-python
-*   numpy
-*   scipy
-*   scikit-learn
-
 These dependencies are typically installed automatically with the pip command above.
 
-## Usage
+## Usage: Quality Analysis
 
 ```python
 import cv2
@@ -64,6 +70,21 @@ if isinstance(result, Exception):
     print(f"An error occurred: {result}")
 
 ```
+
+# Usage: Blur Analysis
+
+```python
+from image_quality_checker import analyze_blur
+
+image_path = r"E:\Ateeq\dataset\ai\all_in_one\ai\ai(14).jpg"
+
+result = analyze_blur(image_path)
+
+print(f"Blur Ratio: {result['blur_ratio']:.2f}%")
+print(f"Category: {result['category']}")
+print(f"Overall Blur: {result['overall_blur']}")
+```
+
 
 **Explanation:**
 
