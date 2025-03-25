@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-quality-checker"
+version = "0.1.0"
+description = "A Python package for analyzing image quality."
+authors = [{ name = "Ateeq Azam", email = "mr.ateeqazam@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["image processing", "image quality", "computer vision"]
+dependencies = ["opencv-python", "numpy", "scipy", "scikit-learn"]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/image-quality-checker"
+Repository = "https://github.com/YOUR_USERNAME/image-quality-checker"
+Issues = "https://github.com/YOUR_USERNAME/image-quality-checker/issues"
+Documentation = "https://github.com/YOUR_USERNAME/image-quality-checker#readme"
