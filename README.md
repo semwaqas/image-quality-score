@@ -1,5 +1,7 @@
 # Image Quality Checker
 
+[![PyPI version](https://badge.fury.io/py/image-quality-analysis.svg)](https://badge.fury.io/py/image-quality-analysis)
+
 This package provides a comprehensive image quality assessment tool that analyzes various aspects of an image to generate a final quality score.  It leverages OpenCV, NumPy, SciPy, and scikit-learn for image processing and analysis.
 
 ## Features
@@ -34,7 +36,7 @@ This package provides a comprehensive image quality assessment tool that analyze
 ## Installation
 
 ```bash
-pip install image-quality-checker
+pip install image-quality-analysis
 ```
 
 These dependencies are typically installed automatically with the pip command above.

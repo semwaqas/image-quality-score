@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "image-quality-checker"
+name = "image-quality-analysis"
 version = "0.1.0"
 description = "A Python package for analyzing image quality."
 authors = [{ name = "Ateeq Azam", email = "mr.ateeqazam@gmail.com" }]
