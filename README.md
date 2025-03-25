@@ -117,3 +117,6 @@ Each metric is normalized by dividing its value by the corresponding `max_value`
 *   Consider logging the individual metric values for more detailed analysis and debugging.
 * The package now has a check on the file size and, if it is below 3 KB it's considered valid.
 * Image is resized to 256x256 for consistency in processing.
+
+## License
+This project is licensed under the Creative Commons Attribution-NoDerivatives (CC BY-ND) License.
