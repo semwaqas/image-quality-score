@@ -1,4 +1,3 @@
-```markdown
 # Image Quality Checker
 
 This package provides a comprehensive image quality assessment tool that analyzes various aspects of an image to generate a final quality score.  It leverages OpenCV, NumPy, SciPy, and scikit-learn for image processing and analysis.
