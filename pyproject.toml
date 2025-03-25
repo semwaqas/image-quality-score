@@ -7,7 +7,7 @@ name = "image-quality-checker"
 version = "0.1.0"
 description = "A Python package for analyzing image quality."
 authors = [{ name = "Ateeq Azam", email = "mr.ateeqazam@gmail.com" }]
-license = { text = "MIT" }
+license = { text = "CC BY-ND" }
 readme = "README.md"
 keywords = ["image processing", "image quality", "computer vision"]
 dependencies = ["opencv-python", "numpy", "scipy", "scikit-learn"]
